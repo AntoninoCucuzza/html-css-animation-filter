@@ -62,3 +62,13 @@ background-color: red;
 .ex-7-img:hover{
     filter: blur(0px) grayscale(100%);
 }
+
+.ex-8-img{
+    transition: all 2s;
+    filter: blur(20px);
+}
+
+.ex-8-img:hover{
+    filter: blur(0px) saturate(300%);
+    border-radius: 50px;
+}
