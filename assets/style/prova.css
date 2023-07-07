@@ -1,7 +1,12 @@
 .ex-1-square{
-
+    transition: all 4s;
 }
 
 .ex-1-square:hover{
 background-color: red;
+}
+
+.ex-2-square{
+    width: 100%;
+
 }
