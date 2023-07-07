@@ -84,13 +84,13 @@ transition: all 5s;
 }
 
 .ex-10-icon{
-    animation-name: my-move;
+    animation-name: ex-10;
     animation-duration: 0.3s;
     animation-iteration-count: infinite;
    
 }
 
-@keyframes my-move {
+@keyframes ex-10 {
 
     25% {
         rotate: -90deg;
@@ -110,12 +110,12 @@ transition: all 5s;
 }
 
 .ex-11-icon:hover{
-    animation-name: my-move2;
+    animation-name: ex-11;
     animation-duration: 1s;
     animation-iteration-count: infinite;
 }
 
-@keyframes my-move2 {
+@keyframes ex-11 {
 
     20% {
         rotate: 90deg;
@@ -134,20 +134,15 @@ transition: all 5s;
     }
 }
 
-.ex-12-button{
-    
-
-}
-
 .ex-12-button:hover .ex-12-top-white{
-    animation-name: my-move-left;
+    animation-name: ex-12-left;
     animation-duration: 0.5s;
     animation-iteration-count: infinite;
 }
 
 
 
-@keyframes my-move-left {
+@keyframes ex-12-left {
 
     33%{
         left: 50%;
@@ -163,12 +158,12 @@ transition: all 5s;
 
 
 .ex-12-button:hover .ex-12-bottom-white{
-    animation-name: my-move-right;
+    animation-name: ex-12-right;
     animation-duration: 0.5s;
     animation-iteration-count: infinite;
 }
 
-@keyframes my-move-right {
+@keyframes ex-12-right {
 
     33%{
         right: 50%;
@@ -180,4 +175,69 @@ transition: all 5s;
     100%{
         right: calc(0% + 60);
     }
+}
+
+.ex-13-button:hover .ex-13-top-white{
+    animation-name: ex-13-left;
+    animation-duration: 5s;
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+    animation-name: ex-13-right;
+    animation-duration: 5s;
+    
+}
+
+
+
+
+
+@keyframes ex-13-left {
+
+30%{
+    left: calc(100% - 30px);
+    top: 0;
+}
+45%{
+    top: 100%;
+    left: calc(100% - 20px);
+}
+75%{
+    top: 100%;
+    left: -20px;
+}
+90%{
+    top: 0;
+    left: -20px;
+}
+100%{
+    top: 0;
+    right: 20px;
+}
+
+}
+
+@keyframes ex-13-right {
+    
+30% {
+    right: calc(100% - 30px);
+    bottom: -10px;
+}
+45% {
+    bottom: 100%;
+    right: calc(100% - 20px);
+}
+75% {
+    bottom: 100%;
+    right: -20px;
+}
+90% {
+    bottom: 0;
+    right: -20px;
+}
+100% {
+    bottom: -10;
+    right: 20%;
+}
+    
 }
