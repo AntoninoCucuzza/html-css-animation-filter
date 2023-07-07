@@ -93,19 +93,19 @@ transition: all 5s;
 @keyframes my-move {
 
     25% {
-        rotate: 90deg;
+        rotate: -90deg;
     }
 
     50% {
-        rotate: 180deg;
+        rotate: -180deg;
     }
 
     75% {
-        rotate: 270deg;
+        rotate: -270deg;
     }
 
     100% {
-        rotate: 360deg;
+        rotate: -360deg;
     }
 }
 
@@ -134,3 +134,50 @@ transition: all 5s;
     }
 }
 
+.ex-12-button{
+    
+
+}
+
+.ex-12-button:hover .ex-12-top-white{
+    animation-name: my-move-left;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+
+
+@keyframes my-move-left {
+
+    33%{
+        left: 50%;
+    }
+
+    66%{
+        left: calc(100% - 60);
+    }
+    100%{
+        left: calc(0%+ 60);
+    }
+}
+
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation-name: my-move-right;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes my-move-right {
+
+    33%{
+        right: 50%;
+    }
+
+    66%{
+        right: calc(100% - 60);
+    }
+    100%{
+        right: calc(0% + 60);
+    }
+}
