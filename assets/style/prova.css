@@ -72,3 +72,13 @@ background-color: red;
     filter: blur(0px) saturate(300%);
     border-radius: 50px;
 }
+
+.ex-9-img{
+transition: all 5s;
+}
+
+.ex-9-img:hover{
+    filter: saturate(500%) hue-rotate(180deg);
+    width: 80%;
+   
+}
